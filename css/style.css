@@ -1,0 +1,388 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-family: Arial;
+  font-weight: 400;
+  color: #445161;
+}
+
+.padding50 {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.page_header {
+  background-color: #445162;
+  color: #fff;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_title {
+  display: block;
+  margin: 0 0 50px 0;
+  font-size: 60px;
+  line-height: 1.2;
+}
+
+.header_list {
+  list-style-type: none;
+  padding: 0 0 0 0;
+  margin: 0;
+}
+
+.header_list__item {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.header_list__item::before {
+  content: url(/img/check_icon.png);
+  margin-right: 10px;
+}
+
+.header_img {
+  display: block;
+  width: 469px;
+  height: 214px;
+  background-color: #ffffff;
+  color: #445162;
+}
+
+.about_section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section_heading {
+  display: block;
+  margin: 0;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.about_heading {
+  display: block;
+
+  text-align: left;
+}
+
+.section_text {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0 0 20px;
+}
+
+.about_section__img {
+  display: block;
+  min-width: 430px;
+  height: 245px;
+  background-color: #445161;
+  color: #fff;
+  margin-left: 100px;
+}
+
+.dignity_section {
+  background-color: #f5f5f5;
+  width: 100%;
+}
+
+.dignity_wrp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dignity_list {
+  list-style-type: none;
+}
+
+.dignity_list__item {
+  margin: 0 0 30px 0;
+  position: relative;
+}
+
+.dignity_list__item::before {
+  content: "+";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #445161;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  line-height: 25px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+}
+
+.dignity_list__item:nth-child(3) {
+  margin: 0;
+}
+
+.figures {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.screenshots_section__figure {
+  display: flex;
+  margin: 0 0 30px;
+  max-width: 50%;
+}
+
+.figure_image {
+  min-width: 200px;
+  height: 150px;
+  background-color: #445161;
+  color: #fff;
+}
+
+.figcaption_heading {
+  margin: 0 0 0 0;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0 15px;
+}
+
+.figcaption_text {
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 15px;
+}
+
+.reviews_section {
+  background-color: #f5f5f5;
+}
+
+.reviews_wrp {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review {
+  display: flex;
+  max-width: 48%;
+}
+
+.review1 {
+  margin-bottom: 24px;
+}
+
+.review2 {
+  margin-left: 32px;
+  margin-bottom: 24px;
+}
+
+.avatar_img {
+  display: block;
+  background-color: #445161;
+  min-width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  margin: 0 31px 0 0;
+}
+
+.review_text {
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #ebebeb;
+  border-radius: 5px;
+  position: relative;
+}
+
+.review_text::before {
+  content: "";
+  display: block;
+  border: 15px solid transparent;
+  border-right: 15px solid #ebebeb;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+}
+
+.review_text_txt {
+  font-size: 14px;
+  line-height: 18px;
+  font-style: italic;
+  color: #333333;
+  margin: 0 0 15px;
+}
+
+.review_author {
+  font-size: 14px;
+  line-height: 18px;
+  color: #989898;
+  margin: 0 0 0 0;
+}
+
+.buyItNow_section {}
+
+.tariffs_wrp {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.tariff {
+  background-color: #445162;
+  padding: 16px 0;
+  color: #fff;
+  width: 300px;
+  border-radius: 5px;
+  display: block;
+  text-align: center;
+  margin-right: 45px;
+}
+
+.tariff:nth-child(3) {
+  margin-right: 0;
+}
+
+.tariff_name {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 17px;
+}
+
+.tariff_price {
+  background-color: #fff;
+  display: block;
+  font-size: 40px;
+  line-height: 30px;
+  color: #445162;
+  width: 300px;
+  height: 71px;
+  border: 2px solid #445162;
+  box-sizing: border-box;
+  padding: 18px;
+}
+
+.tariff_list {
+  margin: 19px 20px;
+  text-align: left;
+  margin: 19px 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.tariff_btn {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #445161;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  margin: 0 20px;
+  padding: 14px;
+  border-radius: 5px;
+}
+
+.page_footer {
+  background-color: #445162;
+  color: #fff;
+}
+
+.contacts_wrp {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_form {
+  width: 500px;
+}
+
+.form {
+  display: block;
+  box-sizing: border-box;
+  width: 500px;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: #445162;
+  padding: 14px 10px;
+  margin-bottom: 21px;
+  border-radius: 5px;
+  max-height: 170px;
+}
+
+.form_btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #445161;
+  background-color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 14px 48px;
+  border: none;
+}
+
+.contacts {
+  margin-left: 70px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact {
+  margin: 0 0 29px;
+  position: relative;
+}
+
+.contacts_skype::before {
+  content: url(/img/skype_icon.png);
+  position: absolute;
+  top: -3px;
+  left: -30px;
+}
+
+.contacts_icq::before {
+  content: url(/img/icq_icon.png);
+  position: absolute;
+  top: -3px;
+  left: -30px;
+}
+
+.contacts_email::before {
+  content: url(/img/email_icon.png);
+  position: absolute;
+  top: 0px;
+  left: -27px;
+}
+
+.contacts_phone::before {
+  content: url(/img/phone_icon.png);
+  position: absolute;
+  top: 0px;
+  left: -28px;
+}
+
+.socials {}
